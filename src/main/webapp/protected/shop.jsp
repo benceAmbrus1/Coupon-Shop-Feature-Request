@@ -10,6 +10,14 @@
 <c:if test="${empty error}">
     <p>ID: ${shop.id}</p>
     <p>Name: ${shop.name}</p>
+    <h2>Coupons for this shop</h2>
+    <c:forEach var="coupon" items="${coupons}">
+        <tr>
+            <td>${coupon.id}</td>
+            <td>${coupon.name}</td>
+            <td>${coupon.percentage}</td>
+        </tr>
+    </c:forEach>
 </c:if>
 <jsp:include page="../snippets/show-error.jsp"/>
 <jsp:include page="../snippets/to-profile.jsp"/>
