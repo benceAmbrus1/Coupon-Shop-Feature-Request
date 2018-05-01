@@ -6,6 +6,7 @@ import com.codecool.web.dao.database.DatabaseCouponDao;
 import com.codecool.web.dao.database.DatabaseShopDao;
 import com.codecool.web.model.Coupon;
 import com.codecool.web.model.Shop;
+import com.codecool.web.model.User;
 import com.codecool.web.service.CouponService;
 import com.codecool.web.service.ShopService;
 import com.codecool.web.service.exception.ServiceException;
